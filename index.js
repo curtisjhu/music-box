@@ -13,7 +13,7 @@ function setup() {
 
 	textAlign(CENTER);
 	sel = createSelect();
-	sel.position(10, 10);
+	sel.position(width-150, height-100);
 	sel.option('Little Dipper.mp3');
 	sel.option('Berlin.mp3');
 	sel.option('Cereal Killa.mp3');
@@ -21,7 +21,7 @@ function setup() {
 	sel.option('On My Way.mp3');
 	sel.option('Pokemon.mp3');
 	sel.changed(mySelectEvent);
-	radius = width/3;
+	radius = min(width, height)/3;
 }
 
 function draw() {
